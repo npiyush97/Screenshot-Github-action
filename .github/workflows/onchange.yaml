@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PUBLICKEY: ${{secrets.PUBLICKEY}}
+      PRIVATEKEY: ${{secrets.PRIVATEKEY}}
+      URLENDPOINT: ${{secrets.URLENDPOINT}}
     steps:
       - name: checkout
         uses: actions/checkout@v4
