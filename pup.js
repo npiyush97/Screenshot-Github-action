@@ -14,7 +14,7 @@ async function run() {
     })
     const page = await browser.newPage()
     try {
-        let data = fs.readFileSync('links.txt', 'utf-8')
+        let data = fs.readFileSync('addlinksfortestpage.txt', 'utf-8')
         const resultArray = data.split(/,\s*|\n/).map(item => item.replace(/'/g, ''));
         for (let url of resultArray) {
             console.log(url)
@@ -25,7 +25,7 @@ async function run() {
             if (validator.isURL(url, options)) {
                 await page.goto(url, { waitUntil: "networkidle0" }).catch((error) => console.log(error))
                 const timestamp = new Date()
-                const screenshot = await page.screenshot({
+                await page.screenshot({
                     fullPage: true
                 })
                     // or upload to your image storage bucket
