@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    enviroment: front-change
+    environment: front-change
     runs-on: ubuntu-latest
     env:
       PUBLICKEY: ${{secrets.PUBLICKEY}}
