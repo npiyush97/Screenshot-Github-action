@@ -9,8 +9,6 @@ async function run() {
         privateKey: process.env.PRIVATEKEY,
         urlEndpoint: process.env.URLENDPOINT
     })
-    console.log(process.env.PUBLICKEY)
-    console.log(process.env.PRIVATEKEY)
     const browser = await puppeteer.launch({
         defaultViewport: null
     })
@@ -19,6 +17,7 @@ async function run() {
         let data = fs.readFileSync('links.txt', 'utf-8')
         const resultArray = data.split(/,\s*|\n/).map(item => item.replace(/'/g, ''));
         for (let url of resultArray) {
+            console.log(url)
             const options = {
                 requrie_protocol: true
             }
