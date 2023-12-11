@@ -9,7 +9,8 @@ async function run() {
         privateKey: process.env.PRIVATEKEY,
         urlEndpoint: process.env.URLENDPOINT
     })
-
+    console.log(process.env.PUBLICKEY)
+    console.log(process.env.PRIVATEKEY)
     const browser = await puppeteer.launch({
         defaultViewport: null
     })
