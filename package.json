@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build && node pup.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "pup": "node pup.js"
   },
   "repository": {
     "type": "git",

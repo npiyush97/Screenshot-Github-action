@@ -7,8 +7,8 @@ on:
 
 jobs:
   build:
-    environment: front-change
     runs-on: ubuntu-latest
+    environment: production
     env:
       PUBLICKEY: ${{secrets.PUBLICKEY}}
       PRIVATEKEY: ${{secrets.PRIVATEKEY}}
