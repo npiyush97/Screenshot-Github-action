@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: production
+    environment: cyclic:prod
     env:
       PUBLICKEY: ${{secrets.PUBLICKEY}}
       PRIVATEKEY: ${{secrets.PRIVATEKEY}}
