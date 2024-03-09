@@ -1,6 +1,5 @@
 # Screenshot Github action 
-![workflow]
-(https://github.com/npiyush97/Screenshot-Github-action/actions/workflows/onchange.yaml/badge.svg)
+[![Workflow Status](https://github.com/npiyush97/Screenshot-Github-action/actions/workflows/onchange.yaml/badge.svg)](https://github.com/npiyush97/Screenshot-Github-action/actions/workflows/onchange.yaml/badge.svg)
 ## overview
 
 This GitHub Action automates the process of taking screenshots of web pages listed in a text file whenever there is a change in the files within the frontend directory. This can be particularly useful for capturing the visual appearance of web pages and monitoring changes over time.
